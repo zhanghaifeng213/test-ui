@@ -1,0 +1,19 @@
+{
+  "name": "@test-ui/components",
+  "version": "1.0.162",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "haha",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/semver": "^7.5.8",
+    "@vitest/coverage-v8": "^2.1.2",
+    "semver": "^7.6.3"
+  }
+}
