@@ -1,3 +1,4 @@
-  - "packages/**"
-  - "play"
-  - "site"
+  packages:
+    - "packages/**"
+    - "play"
+    - "site"

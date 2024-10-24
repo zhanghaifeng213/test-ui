@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:testUI": "gulp -f packages/components/script/build/index.ts",
-    "publish:testUI": "pnpm login --registry=http://your-private-registry-url/ && pnpm publish packages/testUI --registry=http://your-private-registry-url/ --no-git-checks"
+    "publish:testUI": "pnpm publish packages/testUI --no-git-checks"
   },
   "keywords": [],
   "author": "",
