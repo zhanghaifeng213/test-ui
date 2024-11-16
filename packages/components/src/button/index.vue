@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-  import "./style/index.less";
+  import "./style/index.scss";
   defineOptions({ name: "test-button" });
   withDefaults(
     defineProps<{

@@ -27,7 +27,7 @@ export default defineConfig({
       // 确保外部化处理那些你不想打包进库的依赖
       external: [
         "vue",
-        /\.less/,
+        /\.scss/,
         "element-plus",
         "element-plus/dist/index.css"
       ],
@@ -79,12 +79,12 @@ export default defineConfig({
 
         for (const key of keys) {
           const bundler: any = bundle[key as any];
-          //rollup内置方法,将所有输出文件code中的.less换成.css
+          //rollup内置方法,将所有输出文件code中的.scss换成.css
 
           this.emitFile({
             type: "asset",
             fileName: key, //文件名名不变
-            source: bundler.code.replace(/\.less/g, ".css")
+            source: bundler.code.replace(/\.scss/g, ".css")
           });
         }
       }
